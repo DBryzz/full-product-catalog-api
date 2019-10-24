@@ -10,6 +10,7 @@ import org.springframework.hateoas.Resource;
 //import org.springframework.hateoas.EntityModel; // replaces import org.springframework.hateoas.Resource;
 //import org.springframework.hateoas.server.reactive.WebFluxLinkBuilder;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,7 @@ import com.bryzz.fullcatalog.service.ProductDaoService;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin
 public class ProductController {
 	
 	@Autowired
